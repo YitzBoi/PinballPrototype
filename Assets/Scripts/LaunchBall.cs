@@ -53,7 +53,6 @@ public class LaunchBall : MonoBehaviour
         if (holdLaunch)
         {
             holdLaunchTimer += Time.deltaTime;
-            // this.gameObject.transform.parent.localScale = new Vector3(this.gameObject.transform.parent.localScale)
         }
     }
 

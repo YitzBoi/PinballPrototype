@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -8,11 +9,13 @@ public class GameManager : MonoBehaviour
 {
     private int balls = 3;
     private int score = 0;
-    private int multiplier = 0;
+    private int multiplier = 1;
     [SerializeField] private TextMeshProUGUI scoreUI;
     [SerializeField] private TextMeshProUGUI ballsUI;
     [SerializeField] private TextMeshProUGUI multiplierUI;
     [SerializeField] private GameObject gameOverPanelUI;
+
+    private const int MaxMultiplier = 20;
 
     // Update is called once per frame
     void Update()
@@ -49,7 +52,9 @@ public class GameManager : MonoBehaviour
 
     public void ModifyMultiplier(int newMultiplier)
     {
-        
+        multiplier += newMultiplier;
+
+        multiplier = Math.Min(multiplier, MaxMultiplier);
     }
 
     public void AddToScore(int scoreAmount)

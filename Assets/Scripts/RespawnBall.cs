@@ -10,7 +10,7 @@ public class RespawnBall : MonoBehaviour
     {
         if (other.gameObject.tag == "Respawn")
         {
-            StartCoroutine(Respawn());
+            StartCoroutine("Respawn");
         }
     }
 
@@ -18,7 +18,7 @@ public class RespawnBall : MonoBehaviour
     {
         if (other.gameObject.tag == "Respawn")
         {
-            StopCoroutine(Respawn());
+            StopCoroutine("Respawn");
         }
     }
 
@@ -30,6 +30,6 @@ public class RespawnBall : MonoBehaviour
             transform.position = new Vector3(-5, 0.55f, 13);
         else
             gameObject.SetActive(false);
-        StopCoroutine(Respawn());
+        StopCoroutine("Respawn");
     }
 }
