@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,7 +15,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI ballsUI;
     [SerializeField] private TextMeshProUGUI multiplierUI;
     [SerializeField] private GameObject gameOverPanelUI;
-
+    [SerializeField] private UnityEvent loseBall;
+    
     private const int MaxMultiplier = 20;
 
     // Update is called once per frame
@@ -38,6 +40,8 @@ public class GameManager : MonoBehaviour
     public void LoseBall()
     {
         balls--;
+        multiplier = 1;
+        loseBall.Invoke();
     }
 
     public void AcquireBall()

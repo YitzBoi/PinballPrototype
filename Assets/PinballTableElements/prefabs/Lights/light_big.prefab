@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3347175495946839458}
   - component: {fileID: 8904095678408307956}
   - component: {fileID: 6619968831342950302}
-  - component: {fileID: 6026600878871495523}
   - component: {fileID: 3547767525033874660}
   - component: {fileID: 2855148669024463092}
+  - component: {fileID: 8822878479483272192}
   m_Layer: 0
   m_Name: light_big
   m_TagString: Untagged
@@ -86,24 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6026600878871495523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6026600878871495524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 731a50b89355b044381d6fa444410069, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target_mesh: {fileID: 8904095678408307956}
-  target_mesh_states:
-  - {fileID: -5210634530362957802, guid: 386cc69461accb14a81ca0453fb8fbdd, type: 3}
-  - {fileID: -4603305568904993351, guid: 386cc69461accb14a81ca0453fb8fbdd, type: 3}
-  blinkspeed: 0.2
-  max_cycle: 2
 --- !u!136 &3547767525033874660
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -132,3 +114,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isMultiplicator: 0
   value: 1000
+--- !u!114 &8822878479483272192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6026600878871495524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 731a50b89355b044381d6fa444410069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target_mesh: {fileID: 8904095678408307956}
+  target_mesh_states:
+  - {fileID: -5210634530362957802, guid: 386cc69461accb14a81ca0453fb8fbdd, type: 3}
+  - {fileID: -4603305568904993351, guid: 386cc69461accb14a81ca0453fb8fbdd, type: 3}
+  blinkspeed: 0.5
+  max_cycle: 2

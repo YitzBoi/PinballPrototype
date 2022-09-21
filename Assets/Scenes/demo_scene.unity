@@ -5135,6 +5135,105 @@ MonoBehaviour:
   ballsUI: {fileID: 1869963866}
   multiplierUI: {fileID: 294971144}
   gameOverPanelUI: {fileID: 1507128132}
+  loseBall:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8822878479483272192, guid: 98b8e034b254d2a40b2ec16faba7c2d4, type: 3}
+        m_TargetAssemblyTypeName: demoTargetBlink, Assembly-CSharp
+        m_MethodName: OnLostBall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 206473683007017143, guid: 162d1ba4323e5c548a0f13b9264ac589, type: 3}
+        m_TargetAssemblyTypeName: demoTargetBlink, Assembly-CSharp
+        m_MethodName: OnLostBall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5918036183151936047, guid: 33b6f258aba31734ea74c04c3289b420, type: 3}
+        m_TargetAssemblyTypeName: demoTargetBlink, Assembly-CSharp
+        m_MethodName: OnLostBall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3913317025623519642, guid: 8fd3129320cff6446a8ed71512b436e6, type: 3}
+        m_TargetAssemblyTypeName: demoSpriteBlink, Assembly-CSharp
+        m_MethodName: OnLostBall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4604317080723477565, guid: 915ed1eaf7f962943a7cd0c522faf794, type: 3}
+        m_TargetAssemblyTypeName: demoSpriteBlink, Assembly-CSharp
+        m_MethodName: OnLostBall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3683251155548389390, guid: e0f40689c2940894ebbbd347e1d6e634, type: 3}
+        m_TargetAssemblyTypeName: demoSpriteBlink, Assembly-CSharp
+        m_MethodName: OnLostBall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 69794044837009969, guid: d1d4c7fbba5f844458583af6ef009f40, type: 3}
+        m_TargetAssemblyTypeName: demoSpriteBlink, Assembly-CSharp
+        m_MethodName: OnLostBall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3162412239750647555, guid: 51ba83111947c534c8296509a0250292, type: 3}
+        m_TargetAssemblyTypeName: demoSpriteBlink, Assembly-CSharp
+        m_MethodName: OnLostBall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &2065807706
 Transform:
   m_ObjectHideFlags: 0
@@ -5279,7 +5378,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 5d780383115dab741b0a0dc7248a3fc6, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3934843659967886062, guid: 701a6e8173f3e894a959a79e9347eb22, type: 3}
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 701a6e8173f3e894a959a79e9347eb22, type: 3}
 --- !u!4 &531197928286561554 stripped
